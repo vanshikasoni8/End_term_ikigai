@@ -1,28 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Weather Application </title>
-  <link rel="stylesheet" href="style.css" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Header And Footer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
+
 <body>
-  <div class="app">
     <header>
-      <input type="text" autocomplete="off" class="search-box" placeholder="Name your city" />
-    </header>
-    <main>
-      <section class="location">
-        <div class="city">Aligarh, IN</div>
-        <div class="date">14 December 2023</div>
-      </section>
-      <div class="current">
-        <div class="temp">15<span>°c</span></div>
-        <div class="weather">Sunny</div>
-        <div class="hi-low">13°c / 16°c</div>
+  <div class="wrapper">
+      
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#">My Weather App</a></div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#" class="desktop-link">Features</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">Current time</a></li>
+              <li><a href="#">Lattitude and longitude position</a></li>
+              <li><a href="#">City Weather</a></li>
+              
+            </ul>
+          </li>
+          <li>
+            <a href="#" >Services</a>
+          
+          </li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
       </div>
-    </main>
+      
+    </nav>
   </div>
-  <script src="script.js"></script>
+
+</header>
+<!-- my part  -->
+<div class="app-wrap">
+  <header>
+    <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+  </header>
+  <main>
+    <section class="location">
+      <div class="city">Aligarh,India</div>
+      <div class="date">Thrusday 14 December 2023</div>
+    </section>
+    <div class="current">
+      <div class="temp">15<span>°c</span></div>
+      <div class="weather">Sunny</div>
+      <div class="hi-low">13°c / 16°c</div>
+    </div>
+  </main>
+</div>
+  
+<footer>
+    <footer class="footer">
+        
+         <div class="container">
+             <div class="row">
+              
+                 <div class="footer-col">
+                     <h4>Related sites</h4>
+                     <ul>
+                         <li><a href="#">time&date</a></li>
+                         <li><a href="#">Calculator</a></li>
+                         <li><a href="#">To Do</a></li>
+                         <li><a href="#">science</a></li>
+                     </ul>
+                 </div>
+                 <div class="footer-col">
+                     <h4>follow us</h4>
+                     <div class="social-links">
+                         <a href="#"><i class="fab fa-facebook-f"></i></a>
+                         <a href="#"><i class="fab fa-twitter"></i></a>
+                         <a href="#"><i class="fab fa-instagram"></i></a>
+                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </footer>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
